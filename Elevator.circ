@@ -1,0 +1,1703 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </tool>
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="8.0"/>
+    <comp lib="0" loc="(1000,1250)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(1030,1200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="cerere"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(1060,1690)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(1390,1370)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="empty"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1390,1400)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="full"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1530,1340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="prev_state"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(1530,1370)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="data_out"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(1770,1370)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="om"/>
+    </comp>
+    <comp lib="0" loc="(1770,1400)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="sg"/>
+    </comp>
+    <comp lib="0" loc="(1970,840)" name="Splitter">
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="0" loc="(2010,1150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="check_destination"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2010,750)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="anod"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(2060,1080)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="count"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(280,1010)" name="Clock">
+      <a name="label" val="clk_nexys"/>
+    </comp>
+    <comp lib="0" loc="(460,880)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="reset"/>
+    </comp>
+    <comp lib="1" loc="(1140,910)" name="NOT Gate">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="5" loc="(1990,1200)" name="LED">
+      <a name="label" val="led_om"/>
+    </comp>
+    <comp lib="5" loc="(1990,1230)" name="LED">
+      <a name="label" val="led_sg"/>
+    </comp>
+    <comp lib="5" loc="(2080,880)" name="7-Segment Display">
+      <a name="label" val="afisor"/>
+    </comp>
+    <comp lib="5" loc="(880,1310)" name="Button">
+      <a name="label" val="ok_cerere"/>
+    </comp>
+    <comp loc="(1240,950)" name="timer5_usi_deschise">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(1250,1120)" name="fifo">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(1310,1520)" name="mux_sel_viteza">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(1600,970)" name="comparator">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(1900,1080)" name="numarator_zecimal_reversibil">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(1960,750)" name="seven_segment_2_digits">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(990,1450)" name="divizor_frecv_timer1">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(990,1570)" name="divizor_frecv_timer3">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(1000,1250)" to="(1020,1250)"/>
+    <wire from="(1010,1030)" to="(1010,1140)"/>
+    <wire from="(1010,1140)" to="(1030,1140)"/>
+    <wire from="(1020,1220)" to="(1020,1250)"/>
+    <wire from="(1020,1220)" to="(1030,1220)"/>
+    <wire from="(1020,910)" to="(1020,950)"/>
+    <wire from="(1020,910)" to="(1140,910)"/>
+    <wire from="(1050,1540)" to="(1050,1570)"/>
+    <wire from="(1050,1540)" to="(1090,1540)"/>
+    <wire from="(1060,1690)" to="(1080,1690)"/>
+    <wire from="(1080,1450)" to="(1080,1520)"/>
+    <wire from="(1080,1520)" to="(1090,1520)"/>
+    <wire from="(1080,1560)" to="(1080,1690)"/>
+    <wire from="(1080,1560)" to="(1090,1560)"/>
+    <wire from="(1170,910)" to="(1920,910)"/>
+    <wire from="(1240,950)" to="(1270,950)"/>
+    <wire from="(1250,1120)" to="(1300,1120)"/>
+    <wire from="(1250,1140)" to="(1320,1140)"/>
+    <wire from="(1250,1160)" to="(1380,1160)"/>
+    <wire from="(1250,1180)" to="(1360,1180)"/>
+    <wire from="(1250,1200)" to="(1580,1200)"/>
+    <wire from="(1270,790)" to="(1270,950)"/>
+    <wire from="(1300,1120)" to="(1450,1120)"/>
+    <wire from="(1300,970)" to="(1300,1120)"/>
+    <wire from="(1300,970)" to="(1380,970)"/>
+    <wire from="(1310,1520)" to="(1340,1520)"/>
+    <wire from="(1320,1140)" to="(1420,1140)"/>
+    <wire from="(1320,990)" to="(1320,1140)"/>
+    <wire from="(1320,990)" to="(1380,990)"/>
+    <wire from="(1340,1100)" to="(1340,1520)"/>
+    <wire from="(1340,1100)" to="(1470,1100)"/>
+    <wire from="(1360,1180)" to="(1360,1400)"/>
+    <wire from="(1360,1400)" to="(1390,1400)"/>
+    <wire from="(1380,1160)" to="(1380,1370)"/>
+    <wire from="(1380,1370)" to="(1390,1370)"/>
+    <wire from="(1420,1140)" to="(1420,1340)"/>
+    <wire from="(1420,1140)" to="(1680,1140)"/>
+    <wire from="(1420,1340)" to="(1530,1340)"/>
+    <wire from="(1450,1120)" to="(1450,1160)"/>
+    <wire from="(1450,1160)" to="(1490,1160)"/>
+    <wire from="(1470,1100)" to="(1470,1120)"/>
+    <wire from="(1470,1120)" to="(1680,1120)"/>
+    <wire from="(1490,1160)" to="(1490,1370)"/>
+    <wire from="(1490,1160)" to="(1680,1160)"/>
+    <wire from="(1490,1370)" to="(1530,1370)"/>
+    <wire from="(1580,1180)" to="(1580,1200)"/>
+    <wire from="(1580,1180)" to="(1680,1180)"/>
+    <wire from="(1600,970)" to="(1640,970)"/>
+    <wire from="(1620,1100)" to="(1680,1100)"/>
+    <wire from="(1620,820)" to="(1620,1100)"/>
+    <wire from="(1640,790)" to="(1640,970)"/>
+    <wire from="(1640,790)" to="(1670,790)"/>
+    <wire from="(1670,1080)" to="(1680,1080)"/>
+    <wire from="(1670,1200)" to="(1670,1280)"/>
+    <wire from="(1670,1200)" to="(1680,1200)"/>
+    <wire from="(1670,1280)" to="(1790,1280)"/>
+    <wire from="(1670,790)" to="(1670,1080)"/>
+    <wire from="(1670,790)" to="(1740,790)"/>
+    <wire from="(1680,1220)" to="(1680,1270)"/>
+    <wire from="(1680,1270)" to="(1800,1270)"/>
+    <wire from="(1680,700)" to="(1680,770)"/>
+    <wire from="(1680,770)" to="(1740,770)"/>
+    <wire from="(1720,720)" to="(1720,750)"/>
+    <wire from="(1720,720)" to="(2170,720)"/>
+    <wire from="(1720,750)" to="(1740,750)"/>
+    <wire from="(1770,1370)" to="(1790,1370)"/>
+    <wire from="(1770,1400)" to="(1800,1400)"/>
+    <wire from="(1790,1280)" to="(1790,1370)"/>
+    <wire from="(1800,1270)" to="(1800,1400)"/>
+    <wire from="(1900,1080)" to="(1960,1080)"/>
+    <wire from="(1900,1100)" to="(1920,1100)"/>
+    <wire from="(1900,1120)" to="(1940,1120)"/>
+    <wire from="(1900,1140)" to="(1920,1140)"/>
+    <wire from="(1920,1100)" to="(1970,1100)"/>
+    <wire from="(1920,1140)" to="(1920,1230)"/>
+    <wire from="(1920,1230)" to="(1990,1230)"/>
+    <wire from="(1920,870)" to="(1920,910)"/>
+    <wire from="(1920,910)" to="(1920,1100)"/>
+    <wire from="(1940,1120)" to="(1940,1200)"/>
+    <wire from="(1940,1200)" to="(1990,1200)"/>
+    <wire from="(1960,1020)" to="(1960,1080)"/>
+    <wire from="(1960,1020)" to="(2170,1020)"/>
+    <wire from="(1960,1080)" to="(2060,1080)"/>
+    <wire from="(1960,750)" to="(2010,750)"/>
+    <wire from="(1960,770)" to="(1970,770)"/>
+    <wire from="(1970,1100)" to="(1970,1150)"/>
+    <wire from="(1970,1150)" to="(2010,1150)"/>
+    <wire from="(1970,770)" to="(1970,840)"/>
+    <wire from="(1990,770)" to="(2080,770)"/>
+    <wire from="(1990,780)" to="(2090,780)"/>
+    <wire from="(1990,790)" to="(2060,790)"/>
+    <wire from="(1990,800)" to="(2050,800)"/>
+    <wire from="(1990,810)" to="(2040,810)"/>
+    <wire from="(1990,820)" to="(2110,820)"/>
+    <wire from="(1990,830)" to="(2100,830)"/>
+    <wire from="(2040,810)" to="(2040,970)"/>
+    <wire from="(2040,970)" to="(2100,970)"/>
+    <wire from="(2050,800)" to="(2050,960)"/>
+    <wire from="(2050,960)" to="(2090,960)"/>
+    <wire from="(2060,790)" to="(2060,950)"/>
+    <wire from="(2060,950)" to="(2080,950)"/>
+    <wire from="(2080,770)" to="(2080,880)"/>
+    <wire from="(2080,940)" to="(2080,950)"/>
+    <wire from="(2090,780)" to="(2090,880)"/>
+    <wire from="(2090,940)" to="(2090,960)"/>
+    <wire from="(2100,830)" to="(2100,880)"/>
+    <wire from="(2100,940)" to="(2100,970)"/>
+    <wire from="(2110,820)" to="(2110,880)"/>
+    <wire from="(2170,720)" to="(2170,1020)"/>
+    <wire from="(280,1010)" to="(350,1010)"/>
+    <wire from="(350,1010)" to="(460,1010)"/>
+    <wire from="(350,700)" to="(1680,700)"/>
+    <wire from="(350,700)" to="(350,1010)"/>
+    <wire from="(460,1010)" to="(460,1450)"/>
+    <wire from="(460,1010)" to="(680,1010)"/>
+    <wire from="(460,1450)" to="(460,1570)"/>
+    <wire from="(460,1450)" to="(770,1450)"/>
+    <wire from="(460,1570)" to="(770,1570)"/>
+    <wire from="(460,880)" to="(520,880)"/>
+    <wire from="(520,1470)" to="(520,1590)"/>
+    <wire from="(520,1470)" to="(770,1470)"/>
+    <wire from="(520,1590)" to="(770,1590)"/>
+    <wire from="(520,880)" to="(520,1470)"/>
+    <wire from="(520,880)" to="(810,880)"/>
+    <wire from="(680,970)" to="(680,1010)"/>
+    <wire from="(680,970)" to="(860,970)"/>
+    <wire from="(710,1160)" to="(1030,1160)"/>
+    <wire from="(710,790)" to="(1270,790)"/>
+    <wire from="(710,790)" to="(710,1160)"/>
+    <wire from="(810,1030)" to="(1010,1030)"/>
+    <wire from="(810,820)" to="(1620,820)"/>
+    <wire from="(810,820)" to="(810,880)"/>
+    <wire from="(810,880)" to="(810,1030)"/>
+    <wire from="(860,1120)" to="(1030,1120)"/>
+    <wire from="(860,970)" to="(1020,970)"/>
+    <wire from="(860,970)" to="(860,1120)"/>
+    <wire from="(880,1310)" to="(890,1310)"/>
+    <wire from="(890,1180)" to="(1030,1180)"/>
+    <wire from="(890,1180)" to="(890,1310)"/>
+    <wire from="(980,870)" to="(1920,870)"/>
+    <wire from="(980,870)" to="(980,990)"/>
+    <wire from="(980,990)" to="(1020,990)"/>
+    <wire from="(990,1450)" to="(1080,1450)"/>
+    <wire from="(990,1570)" to="(1050,1570)"/>
+  </circuit>
+  <vhdl name="lift">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY lift IS
+PORT (
+	cerere: in std_logic_vector(3 downto 0);
+  	ok_cerere_enw: in std_logic;
+  	ext_or_int: in std_logic;		-- '1' -&gt; interior, '0' -&gt; exterior
+  	om: in std_logic;
+  	sg: in std_logic;
+  	viteza: in std_logic;
+  	clk_nexys: in std_logic;
+  	afisor_anod: out std_logic_vector(3 downto 0);
+  	afisor_catod: out std_logic_vector(6 downto 0);
+  	led_om: out std_logic;
+  	led_sg: out std_logic;
+  	RESET: in std_logic
+    );
+END lift;
+
+
+ARCHITECTURE arch_lift OF lift IS
+
+--componente
+component fifo is
+port(
+    clk : in std_logic;
+    reset : in std_logic;
+    enr : in std_logic;   
+    ok_cerere_enw: in std_logic;   
+    data_in : in std_logic_vector (3 downto 0);  
+    ext_or_int: in std_logic;  
+    data_out : out std_logic_vector(3 downto 0);    
+    prev_state : out std_logic_vector(3 downto 0);   
+    empty : out std_logic;
+    full : out std_logic;
+    num_elem: out std_logic_vector (3 downto 0)
+  );
+end component fifo;
+
+component numarator_zecimal_reversibil is
+    port (
+        dir: in std_logic;
+        count: out std_logic_vector(3 downto 0);
+        reset: in std_logic;
+        clk: in std_logic;
+        load_value: in std_logic_vector(3 downto 0);
+        check_destination: out std_logic;
+        destination: in std_logic_vector(3 downto 0);
+        enable: in std_logic_vector(3 downto 0);
+        om: in std_logic;
+        sg: in std_logic;
+        led_om: out std_logic;
+        led_sg: out std_logic
+    );
+end component numarator_zecimal_reversibil;
+
+component comparator is
+    port (
+        A, B: in std_logic_vector(3 downto 0);
+        output: out std_logic
+    );
+end component comparator;
+
+component seven_segment_2_digits IS
+  PORT (
+  	input: in std_logic_vector(3 downto 0);
+  	anod: out std_logic_vector(3 downto 0);
+  	catod: out std_logic_vector(6 downto 0);
+  	clock: in std_logic;
+  	dir: in std_logic
+    );
+END component seven_segment_2_digits;
+
+component timer5_usi_deschise IS
+  PORT (
+  	reset5: in std_logic;
+  	clk5: in std_logic;
+  	enable: in std_logic;
+  	output: out std_logic
+    );
+END component timer5_usi_deschise;
+
+component divizor_frecv_timer1 is 
+port( 
+    CLK : in std_logic;
+    reset: in std_logic;
+    D : out std_logic
+);
+end component divizor_frecv_timer1;
+
+component divizor_frecv_timer3 is 
+port( 
+
+    CLK : in std_logic;
+    reset: in std_logic;
+    D : out std_logic
+);
+end component divizor_frecv_timer3;
+
+component mux_sel_viteza IS
+  PORT (
+ 	input1, input2: in std_logic;
+ 	s: in std_logic;
+ 	output: out std_logic
+    );
+END component mux_sel_viteza;
+--semnale intermediare
+signal output_timer5: std_logic:='1';
+signal fifo_data_out: std_logic_vector(3 downto 0) := "0000";
+signal fifo_prev_state: std_logic_vector(3 downto 0) := "0000";
+signal empty_s: std_logic;
+signal full_s: std_logic;
+signal num_elem_s: std_logic_vector(3 downto 0):= "0000";
+signal check_dest: std_logic := '1';
+signal output_comparator: std_logic :='1';
+signal clk_1: std_logic:=clk_nexys;
+signal clk_3: std_logic:=clk_nexys;
+signal clk_divizat:std_logic;
+signal count_afisor: std_logic_vector(3 downto 0):= "0000";
+BEGIN
+--legarea componentelor top level structural
+	fifoo: fifo port map(clk_nexys, reset, output_timer5, ok_cerere_enw, cerere, ext_or_int, fifo_data_out, fifo_prev_state, empty_s, full_s, num_elem_s);
+	timer5_usa: timer5_usi_deschise port map(reset, clk_nexys, check_dest, output_timer5);
+	comparator_etaje: comparator port map(fifo_data_out, fifo_prev_state, output_comparator);
+	divizor1: divizor_frecv_timer1 port map(clk_nexys, reset, clk_1);
+	divizor3: divizor_frecv_timer3 port map(clk_nexys, reset, clk_3);
+	mux: mux_sel_viteza  port map(clk_1, clk_3, viteza, clk_divizat);
+	numarator_reversibil: numarator_zecimal_reversibil port map(output_comparator, count_afisor, reset, clk_divizat, fifo_prev_state, check_dest, fifo_data_out, num_elem_s, om, sg, led_om, led_sg);
+	afisaj: seven_segment_2_digits port map(count_afisor, afisor_anod, afisor_catod, clk_nexys, output_comparator);
+END arch_lift;
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity fifo is
+port(
+    clk : in std_logic;
+    reset : in std_logic;
+    enr : in std_logic;   
+    enw : in std_logic;   
+    data_in : in std_logic_vector (3 downto 0);   
+    ext_or_int: in std_logic; 
+    data_out : out std_logic_vector(3 downto 0);    
+    prev_state : out std_logic_vector(3 downto 0);   
+    empty : out std_logic;
+    full : out std_logic;
+    num_elem: out std_logic_vector (3 downto 0)
+  );
+end entity fifo;
+
+architecture arch_fifo of fifo is
+  type memory_type is array (0 to 13) of std_logic_vector(3 downto 0);
+  signal memory : memory_type := (others =&gt; (others =&gt; '0'));  --memory pentru fifo
+  signal readptr, writeptr : integer range 0 to 14 := 0;
+  signal is_num_elem: integer range 0 to 14;
+  signal is_full: std_logic := '0';
+  signal is_empty: std_logic :='1';
+begin
+  empty &lt;= is_empty;
+  full &lt;= is_full;
+  num_elem&lt;= std_logic_vector(to_unsigned(is_num_elem, 4));
+  process (clk, reset) 
+  begin
+    if reset = '1' then
+      data_out &lt;= (others =&gt; '0');
+      prev_state &lt;= (others =&gt; '0');
+      readptr &lt;= 0;
+      writeptr &lt;= 0;
+      is_num_elem &lt;= 0;
+      is_empty &lt;= '1';
+      is_full &lt;= '0';
+    elsif rising_edge(clk) then
+      if enr = '1' and is_empty = '0' then  --read
+        if readptr /= 0 then
+          prev_state &lt;= memory(readptr - 1);
+        end if;
+        data_out &lt;= memory(readptr);
+        readptr &lt;= (readptr + 1) mod 14;
+        is_num_elem &lt;= (is_num_elem - 1) mod 14;
+      end if;
+      
+      if enw = '1' and is_full = '0'  then  --write
+      	if writeptr = 0 or data_in /= memory(writeptr - 1) then
+        	memory(writeptr) &lt;= data_in;
+        	writeptr &lt;= writeptr + 1;
+        	is_num_elem &lt;= is_num_elem + 1;
+        	is_empty&lt;='0';
+        	end if;
+      end if;
+      end if;
+      
+      if readptr = 14 then   --reset readptr
+        readptr &lt;= 0;
+      end if;
+      
+      if writeptr = 14 then  --reset writeptr
+        writeptr &lt;= 0;
+      end if;
+      
+      if readptr = 0 then
+        prev_state &lt;= "0000";
+      end if;
+      
+      if is_num_elem = 14 then
+        is_full &lt;= '1';
+      elsif is_num_elem /= 14 then
+        is_full &lt;= '0';
+      end if;
+      
+      if is_num_elem = 0 then
+        is_empty &lt;= '1';
+      else
+        is_empty &lt;= '0';
+      end if;
+  end process;
+end arch_fifo;
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity numarator_zecimal_reversibil is
+    port (
+        dir: in std_logic;
+        count: out std_logic_vector(3 downto 0);
+        reset: in std_logic;
+        clk: in std_logic;
+        load_value: in std_logic_vector(3 downto 0);
+        check_destination: out std_logic;
+        destination: in std_logic_vector(3 downto 0);
+        enable: in std_logic_vector(3 downto 0);
+        om: in std_logic;
+        sg: in std_logic;
+        led_om: out std_logic;
+        led_sg: out std_logic
+    );
+end entity numarator_zecimal_reversibil;
+
+architecture arch_numarator_zecimal_reversibil of numarator_zecimal_reversibil is
+    signal count_value: std_logic_vector(3 downto 0) := (others =&gt; '0');
+    signal count_helper: integer range 0 to 13 := 0;
+    signal counting: std_logic := '0';
+    signal stop_counting: std_logic:='0';
+    signal destination_new:std_logic_vector(3 downto 0):= destination;
+    signal reinit : std_logic := '0';
+    signal true_destination: std_logic:='0';
+begin
+    led_om &lt;= om;
+    led_sg &lt;= sg;
+    process(clk, reinit, reset)
+    begin
+    if enable &gt;= "0000" or load_value = destination then
+    	   if(load_value = "0000" and destination = "0000") then
+    	   	true_destination &lt;= '1';
+        elsif reset = '1' then
+            count_helper &lt;= to_integer(unsigned(load_value));
+            destination_new &lt;= destination;
+            counting &lt;= '0'; 
+        elsif rising_edge(clk) then
+            if counting = '0' and dir = '1' and stop_counting = '0' and sg = '0' and om = '0' then 
+                count_helper &lt;= to_integer(unsigned(load_value));
+                counting &lt;= '1';
+            elsif counting = '0' and dir = '0' and stop_counting = '0' and sg = '0' and om = '0' then 
+                count_helper &lt;= to_integer(unsigned(load_value));
+                counting &lt;= '1';
+            elsif counting = '1' and stop_counting = '0' then
+            
+                if dir = '1' then 
+                	if count_helper &gt;= 13 then
+            			count_helper &lt;= 0;
+            		else
+                    count_helper &lt;= (count_helper + 1); --incrementare
+                    end if;
+                else
+                	if count_helper &lt; 0 then
+                		count_helper &lt;= 13;
+                	else
+                    count_helper &lt;= (count_helper - 1); --decrementare
+                    end if;
+                end if;
+             if(dir='1') then
+                if count_helper = to_integer(unsigned(destination_new))-1 then
+                	counting &lt;= '0';
+                    stop_counting &lt;= '1'; -- Oprire numărător
+                    true_destination &lt;= '1';
+                end if;
+                elsif count_helper = to_integer(unsigned(destination_new))+1 then
+             		counting &lt;= '0';
+                    stop_counting &lt;= '1'; -- Oprire numărător
+                    true_destination &lt;= '1';
+                 else true_destination&lt;= '0';
+                end if;
+            end if;
+        end if;
+    if(destination_new /= destination) then
+	    stop_counting &lt;= '0';
+	    destination_new&lt;=destination;
+	    reinit &lt;= '1';
+	    true_destination &lt;='0';
+    end if;
+    end if;
+    count &lt;= std_logic_vector(to_unsigned(count_helper, 4));
+    check_destination&lt;=true_destination;
+    end process;
+   
+end arch_numarator_zecimal_reversibil;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity comparator is
+    port (
+        A, B: in std_logic_vector(3 downto 0);
+        output: out std_logic
+    );
+end entity comparator;
+
+architecture arch_comparator of comparator is
+begin
+    output&lt;='1' when A&gt;B else '0';
+end arch_comparator;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY seven_segment_2_digits IS
+  PORT (
+  	input: in std_logic_vector(3 downto 0);
+  	anod: out std_logic_vector(3 downto 0);
+  	catod: out std_logic_vector(6 downto 0);
+  	clock: in std_logic;
+  	dir: in std_logic
+    );
+END entity seven_segment_2_digits;
+
+ARCHITECTURE arch_seven_segment_2_digits OF seven_segment_2_digits IS
+
+component digit_transform IS
+PORT (
+       etaj: in std_logic_vector(3 downto 0);
+  	  c1, c2: out std_logic_vector(3 downto 0)
+);
+END component digit_transform;
+component counter IS
+PORT (
+  clk: in std_logic;
+  output_c: out std_logic_vector (1 downto 0)
+);
+END component counter;
+component MUX is
+port(	
+	sel1, sel2: in std_logic;
+	input0, input1, input2, input3: in std_logic_vector (3 downto 0);
+	output_m: out std_logic_vector(3 downto 0)
+);
+end component MUX;
+component bcd_to_7segm IS
+  PORT (
+	uni: in std_logic_vector(3 downto 0);
+	ssd_uni: out std_logic_Vector(6 downto 0)
+    );
+END component bcd_to_7segm;
+component mux_initializat IS
+  PORT (
+ 	sel1, sel2: in std_logic;
+ 	output_m: out std_logic_vector(3 downto 0)
+    );
+END component mux_initializat;
+component decizie_directie is
+port(
+	dir: in std_logic;
+	output_directie: out std_logic_vector(3 downto 0)
+);
+end component decizie_directie;
+---semnale intermediare
+signal z, u: std_logic_vector(3 downto 0);
+signal iesire_num: std_logic_vector(1 downto 0);
+signal iesire_mux1: std_logic_vector(3 downto 0);
+signal sageata_sus: std_logic_vector(3 downto 0):="1010";
+signal sageata_jos: std_logic_vector(3 downto 0):="1011";
+signal direction: std_logic_vector(3 downto 0):= "0000";
+BEGIN
+iesire_numar: counter port map(clock, iesire_num);
+dig_transformare: digit_transform port map(input, u, z);
+decizie_dir: decizie_directie port map(dir, direction);
+multiplexor1: mux port map(iesire_num(1), iesire_num(0), u, z, direction, "0000", iesire_mux1);
+bcd_7segmente: bcd_to_7segm port map(iesire_mux1, catod);
+mux_init: mux_initializat port map(iesire_num(1), iesire_num(0), anod);
+
+
+end architecture arch_seven_segment_2_digits;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity MUX is
+port(	
+	sel1, sel2: in std_logic;
+	input0, input1, input2, input3: in std_logic_vector (3 downto 0);
+	output_m: out std_logic_vector(3 downto 0)
+);
+end entity MUX;
+
+architecture arch_MUX of MUX is
+begin
+process(sel1,sel2)
+begin
+if sel1='0' and sel2='0'then output_m &lt;= input0;
+elsif sel1='0' and sel2='1' then output_m &lt;= input1;
+elsif sel1='1' and sel2='0' then output_m &lt;= input2;
+elsif sel1='1' and sel2='1' then output_m &lt;= input3;
+end if;
+end process;
+end architecture arch_MUX;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY counter IS
+PORT (
+  clk: in std_logic;
+  output_c: out std_logic_vector (1 downto 0)
+ );
+END entity counter;
+
+ARCHITECTURE arch_c OF counter IS
+BEGIN
+	process(clk)
+	variable S: std_logic_vector (15 downto 0) := "0000000000000000";
+		begin
+		if rising_edge(clk) then
+		S := S + 1;
+		end if;
+	output_c &lt;= s(1 downto 0);	
+	end process;
+END arch_c;
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY bcd_to_7segm IS
+  PORT (
+	uni: in std_logic_vector(3 downto 0);
+	ssd_uni: out std_logic_Vector(6 downto 0)
+    );
+END entity bcd_to_7segm;
+
+ARCHITECTURE arch_bcd_to_7segm OF bcd_to_7segm IS
+
+BEGIN
+
+ssd_uni&lt;="1111110" when uni=x"0" else "0110000" when uni = x"1" else "1101101" when uni = x"2" else "1111001" when uni = x"3" else "0110011" when uni = x"4"
+	else "1011011" when uni = x"5" else "1011111" when uni = x"6" else "1110000" when uni = x"7" else "1111111" when uni = x"8" else "1110011" when uni = x"9" else "0100011" 
+	when uni="1010" else "0011100" when uni="1011" else "0000000";
+
+END arch_bcd_to_7segm;
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.ALL;
+
+ENTITY digit_transform is
+PORT (
+         etaj: in std_logic_vector(3 downto 0);
+  	    c1, c2: out std_logic_vector(3 downto 0)
+       );
+END entity digit_transform;
+
+ARCHITECTURE arch_digit_transform OF digit_transform IS
+SHARED VARIABLE N,C,D:INTEGER;
+BEGIN
+	PROCESS(etaj)
+	begin 
+
+		N:=to_integer(unsigned(ETAJ));
+		C:= N / 10;
+		D:= N mod 10;
+		C1 &lt;= std_logic_vector( to_unsigned(C, 4));
+		C2 &lt;= std_logic_vector( to_unsigned(D, 4));
+
+end process;
+end architecture arch_digit_transform;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY mux_initializat IS
+  PORT (
+ 	sel1, sel2: in std_logic;
+ 	output_m: out std_logic_vector(3 downto 0)
+    );
+END entity mux_initializat;
+
+ARCHITECTURE arch_mux_initializat OF mux_initializat IS
+signal s0:  std_logic_vector(3 downto 0):="0001";
+signal s1:  std_logic_vector(3 downto 0):="0010";
+signal s2:  std_logic_vector(3 downto 0):="0100";
+signal s3:  std_logic_vector(3 downto 0):="0000";
+BEGIN
+process(sel1, sel2)
+begin
+	if sel1='0' and sel2='0' then output_m &lt;= s0;
+	elsif sel1='0' and sel2='1' then output_m &lt;= s1;
+	elsif sel1='1' and sel2='0' then output_m &lt;= s2;
+	elsif sel1='1' and sel2='1' then output_m &lt;= s3;
+	end if;
+end process;
+END arch_mux_initializat;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity decizie_directie is
+port(
+	dir: in std_logic;
+	output_directie: out std_logic_vector(3 downto 0)
+);
+end entity decizie_directie;
+architecture arch_decizie_directie of decizie_directie is
+begin
+	output_directie &lt;= "1010" when dir ='1' else "1011";
+end arch_decizie_directie;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+
+
+ENTITY timer5_usi_deschise IS
+  PORT (
+  	reset5: in std_logic;
+  	clk5: in std_logic;
+  	enable: in std_logic;
+  	output: out std_logic
+    );
+END entity timer5_usi_deschise;
+
+ARCHITECTURE arch_timer5_usi_deschise OF timer5_usi_deschise IS
+signal ok: std_logic:='0';
+BEGIN
+
+	process(clk5,reset5)
+	variable count_helper: natural := 0;
+	begin
+	if enable ='1' then
+			if reset5='1' then 
+			count_helper := 0; 
+			ok&lt;='0';
+			elsif clk5'event and clk5='1' then
+				count_helper := count_helper + 1;
+			elsif count_helper = 5 then
+				ok&lt;='1';
+				count_helper := 0;
+			elsif count_helper /=5 then ok &lt;='0';
+			end if;
+	end if;
+	end process;
+	output&lt;=ok;
+END arch_timer5_usi_deschise;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+
+entity divizor_frecv_timer1 is 
+    port ( 
+    CLK : in std_logic;
+    reset: in std_logic;
+    D : out std_logic
+);
+end entity divizor_frecv_timer1;
+ 
+architecture arch_divizor_frecv_timer1 of divizor_frecv_timer1 is     
+
+signal count_c: integer :=1;
+signal new_clock: std_logic :='0';
+signal newQ: std_logic_vector(3 downto 0);
+BEGIN
+
+process(clk, reset)
+begin
+	if(reset = '1') then 
+		count_c &lt;= 1;
+	elsif(RISING_EDGE(clk)) then
+		if(count_c = 50000000) then
+			count_c &lt;= 1;
+			new_clock &lt;= not(new_clock);
+	else count_c &lt;= count_c+1;
+	end if;
+	end if;
+	end process;
+end arch_divizor_frecv_timer1;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+
+entity divizor_frecv_timer3 is 
+    port ( 
+    CLK : in std_logic;
+    reset: in std_logic;
+    D : out std_logic
+);
+end entity divizor_frecv_timer3;
+ 
+architecture arch_divizor_frecv_timer3 of divizor_frecv_timer3 is     
+
+signal count_c: integer :=1;
+signal new_clock: std_logic :='0';
+signal newQ: std_logic_vector(3 downto 0);
+BEGIN
+
+process(clk, reset)
+begin
+	if(reset = '1') then 
+		count_c &lt;= 1;
+	elsif(RISING_EDGE(clk)) then
+		if(count_c = 3 * 50000000) then
+			count_c &lt;= 1;
+			new_clock &lt;= not(new_clock);
+	else count_c &lt;= count_c+1;
+	end if;
+	end if;
+	end process;
+end arch_divizor_frecv_timer3;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY mux_sel_viteza IS
+  PORT (
+ 	input1, input2: in std_logic;
+ 	s: in std_logic;
+ 	output: out std_logic
+    );
+END entity mux_sel_viteza;
+
+ARCHITECTURE arch_mux_sel_viteza OF mux_sel_viteza IS
+BEGIN
+
+	output &lt;= input1 when (s='0') else input2;
+
+END arch_mux_sel_viteza;
+</vhdl>
+  <vhdl name="fifo">library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity fifo is
+port(
+    clk : in std_logic;
+    reset : in std_logic;
+    enr : in std_logic;   
+    enw : in std_logic;   
+    data_in : in std_logic_vector (3 downto 0);  
+    ext_or_int: in std_logic;  
+    data_out : out std_logic_vector(3 downto 0);    
+    prev_state : out std_logic_vector(3 downto 0);   
+    empty : out std_logic;
+    full : out std_logic;
+    num_elem: out std_logic_vector (3 downto 0)
+  );
+end entity fifo;
+
+architecture arch_fifo of fifo is
+  type memory_type is array (0 to 13) of std_logic_vector(3 downto 0);
+  signal memory : memory_type := (others =&gt; (others =&gt; '0'));  --memory pentru fifo
+  signal readptr, writeptr : integer range 0 to 14 := 0;
+  signal is_num_elem: integer range 0 to 14;
+  signal is_full: std_logic := '0';
+  signal is_empty: std_logic :='1';
+begin
+  empty &lt;= is_empty;
+  full &lt;= is_full;
+  num_elem&lt;= std_logic_vector(to_unsigned(is_num_elem, 4));
+  process (clk, reset) 
+  begin
+  	if reset = '1' then
+      	 data_out &lt;= (others =&gt; '0');
+     	 prev_state &lt;= (others =&gt; '0');
+     	 readptr &lt;= 0;
+     	 writeptr &lt;= 0;
+     	 is_num_elem &lt;= 0;
+     	 is_empty &lt;= '1';
+     	 is_full &lt;= '0';
+    elsif rising_edge(clk) then
+    if enr = '1' and is_empty = '0' then  --read
+    		if readptr /= 0 then
+          prev_state &lt;= memory(readptr - 1);
+        	end if;
+        	data_out &lt;= memory(readptr);
+        	readptr &lt;= (readptr + 1) mod 14;
+       	 is_num_elem &lt;= (is_num_elem - 1) mod 14;
+    end if;
+      
+    if enw = '1' and (ext_or_int='1' or ext_or_int='0') and is_full = '0'  then  --write
+      	if writeptr = 0 or data_in /= memory(writeptr - 1) then
+        	memory(writeptr) &lt;= data_in;
+        	writeptr &lt;= writeptr + 1;
+        	is_num_elem &lt;= is_num_elem + 1;
+        	is_empty&lt;='0';
+        	end if;
+    end if;
+    end if;
+      
+    if readptr = 14 then   --reset readptr
+    		readptr &lt;= 0;
+    end if;
+      
+    if writeptr = 14 then  --reset writeptr
+	    writeptr &lt;= 0;
+    end if;
+      
+    if readptr = 0 then
+   	    prev_state &lt;= "0000";
+    end if;
+      
+    if is_num_elem = 14 then
+         is_full &lt;= '1';
+    elsif is_num_elem /= 14 then
+         is_full &lt;= '0';
+    end if;
+      
+    if is_num_elem = 0 then
+   	    is_empty &lt;= '1';
+    else
+         is_empty &lt;= '0';
+    end if;
+    end process;
+end arch_fifo;</vhdl>
+  <vhdl name="numarator_zecimal_reversibil">library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity numarator_zecimal_reversibil is
+    port (
+        dir: in std_logic;
+        count: out std_logic_vector(3 downto 0);
+        reset: in std_logic;
+        clk: in std_logic;
+        load_value: in std_logic_vector(3 downto 0);
+        check_destination: out std_logic;
+        destination: in std_logic_vector(3 downto 0);
+        enable: in std_logic_vector(3 downto 0);
+        om: in std_logic;
+        sg: in std_logic;
+        led_om: out std_logic;
+        led_sg: out std_logic
+    );
+end entity numarator_zecimal_reversibil;
+
+architecture arch_numarator_zecimal_reversibil of numarator_zecimal_reversibil is
+    signal count_value: std_logic_vector(3 downto 0) := (others =&gt; '0');
+    signal count_helper: integer range 0 to 13 := 0;
+    signal counting: std_logic := '0';
+    signal stop_counting: std_logic:='0';
+    signal destination_new:std_logic_vector(3 downto 0):= destination;
+    signal reinit : std_logic := '0';
+    signal true_destination: std_logic:='0';
+   -- signal load_value: std_logic_vector(3 downto 0) := "0000";
+begin
+    led_om &lt;= om;
+    led_sg &lt;= sg;
+    process(clk, reinit, reset)
+    begin
+    
+    if enable &gt;= "0000" or enable = "UUUU" or load_value = destination then
+    	   if(load_value = "0000" and destination = "0000") then
+    	   	true_destination &lt;= '1';
+        elsif reset = '1' then
+            count_helper &lt;= to_integer(unsigned(load_value));
+            destination_new &lt;= destination;
+            counting &lt;= '0'; 
+        elsif rising_edge(clk) then
+            if counting = '0' and dir = '1' and stop_counting = '0' and sg = '0' and om = '0' then 
+                count_helper &lt;= to_integer(unsigned(load_value));
+                counting &lt;= '1';
+            elsif counting = '0' and dir = '0' and stop_counting = '0' and sg = '0' and om = '0' then 
+                count_helper &lt;= to_integer(unsigned(load_value));
+                counting &lt;= '1';
+            elsif counting = '1' and stop_counting = '0' then
+            
+                if dir = '1' then 
+                	if count_helper &gt;= 13 then
+            			count_helper &lt;= 0;
+            		else
+                    count_helper &lt;= (count_helper + 1); --incrementare
+                    end if;
+                else
+                	if count_helper &lt; 0 then
+                		count_helper &lt;= 13;
+                	else
+                    count_helper &lt;= (count_helper - 1); --decrementare
+                    end if;
+                end if;
+             if(dir='1') then
+                if count_helper = to_integer(unsigned(destination_new))-1 then
+                	counting &lt;= '0';
+                    stop_counting &lt;= '1'; -- Oprire numărător
+                    true_destination &lt;= '1';
+                end if;
+                elsif count_helper = to_integer(unsigned(destination_new))+1 then
+             		counting &lt;= '0';
+                    stop_counting &lt;= '1'; -- Oprire numărător
+                    true_destination &lt;= '1';
+                 else true_destination&lt;= '0';
+                end if;
+            end if;
+        end if;
+    if(destination_new /= destination) then
+	    stop_counting &lt;= '0';
+	    destination_new&lt;=destination;
+	    reinit &lt;= '1';
+	    true_destination &lt;='0';
+    end if;
+    end if;
+    count &lt;= std_logic_vector(to_unsigned(count_helper, 4));
+    check_destination&lt;=true_destination;
+   -- load_value&lt;=load_value_t;
+    end process;
+   
+end arch_numarator_zecimal_reversibil;</vhdl>
+  <vhdl name="comparator">library ieee;
+use ieee.std_logic_1164.all;
+
+entity comparator is
+    port (
+        A, B: in std_logic_vector(3 downto 0);
+        output: out std_logic
+    );
+end entity comparator;
+
+architecture arch_comparator of comparator is
+begin
+    output&lt;='1' when A&gt;B else '0';
+end arch_comparator;
+</vhdl>
+  <vhdl name="seven_segment_2_digits">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY seven_segment_2_digits IS
+  PORT (
+  	input: in std_logic_vector(3 downto 0);
+  	anod: out std_logic_vector(3 downto 0);
+  	catod: out std_logic_vector(6 downto 0);
+  	clock: in std_logic;
+  	dir: in std_logic
+    );
+END entity seven_segment_2_digits;
+
+ARCHITECTURE arch_seven_segment_2_digits OF seven_segment_2_digits IS
+
+component digit_transform IS
+PORT (
+       etaj: in std_logic_vector(3 downto 0);
+  	  c1, c2: out std_logic_vector(3 downto 0)
+);
+END component digit_transform;
+component counter IS
+PORT (
+  clk: in std_logic;
+  output_c: out std_logic_vector (1 downto 0)
+);
+END component counter;
+component MUX is
+port(	
+	sel1, sel2: in std_logic;
+	input0, input1, input2, input3: in std_logic_vector (3 downto 0);
+	output_m: out std_logic_vector(3 downto 0)
+);
+end component MUX;
+component bcd_to_7segm IS
+  PORT (
+	uni: in std_logic_vector(3 downto 0);
+	ssd_uni: out std_logic_Vector(6 downto 0)
+    );
+END component bcd_to_7segm;
+component mux_initializat IS
+  PORT (
+ 	sel1, sel2: in std_logic;
+ 	output_m: out std_logic_vector(3 downto 0)
+    );
+END component mux_initializat;
+component decizie_directie is
+port(
+	dir: in std_logic;
+	output_directie: out std_logic_vector(3 downto 0)
+);
+end component decizie_directie;
+---semnale intermediare
+signal z, u: std_logic_vector(3 downto 0);
+signal iesire_num: std_logic_vector(1 downto 0);
+signal iesire_mux1: std_logic_vector(3 downto 0);
+signal sageata_sus: std_logic_vector(3 downto 0):="1010";
+signal sageata_jos: std_logic_vector(3 downto 0):="1011";
+signal direction: std_logic_vector(3 downto 0):= "0000";
+BEGIN
+iesire_numar: counter port map(clock, iesire_num);
+dig_transformare: digit_transform port map(input, u, z);
+decizie_dir: decizie_directie port map(dir, direction);
+multiplexor1: mux port map(iesire_num(1), iesire_num(0), u, z, direction, "0000", iesire_mux1);
+bcd_7segmente: bcd_to_7segm port map(iesire_mux1, catod);
+mux_init: mux_initializat port map(iesire_num(1), iesire_num(0), anod);
+
+
+end architecture arch_seven_segment_2_digits;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity MUX is
+port(	
+	sel1, sel2: in std_logic;
+	input0, input1, input2, input3: in std_logic_vector (3 downto 0);
+	output_m: out std_logic_vector(3 downto 0)
+);
+end entity MUX;
+
+architecture arch_MUX of MUX is
+begin
+process(sel1,sel2)
+begin
+if sel1='0' and sel2='0'then output_m &lt;= input0;
+elsif sel1='0' and sel2='1' then output_m &lt;= input1;
+elsif sel1='1' and sel2='0' then output_m &lt;= input2;
+elsif sel1='1' and sel2='1' then output_m &lt;= input3;
+end if;
+end process;
+end architecture arch_MUX;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY counter IS
+PORT (
+  clk: in std_logic;
+  output_c: out std_logic_vector (1 downto 0)
+ );
+END entity counter;
+
+ARCHITECTURE arch_c OF counter IS
+BEGIN
+	process(clk)
+	variable S: std_logic_vector (15 downto 0) := "0000000000000000";
+		begin
+		if rising_edge(clk) then
+		S := S + 1;
+		end if;
+	output_c &lt;= s(1 downto 0);	
+	end process;
+END arch_c;
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY bcd_to_7segm IS
+  PORT (
+	uni: in std_logic_vector(3 downto 0);
+	ssd_uni: out std_logic_Vector(6 downto 0)
+    );
+END entity bcd_to_7segm;
+
+ARCHITECTURE arch_bcd_to_7segm OF bcd_to_7segm IS
+
+BEGIN
+
+ssd_uni&lt;="1111110" when uni=x"0" else "0110000" when uni = x"1" else "1101101" when uni = x"2" else "1111001" when uni = x"3" else "0110011" when uni = x"4"
+	else "1011011" when uni = x"5" else "1011111" when uni = x"6" else "1110000" when uni = x"7" else "1111111" when uni = x"8" else "1110011" when uni = x"9" else "0100011" 
+	when uni="1010" else "0011100" when uni="1011" else "0000000";
+
+END arch_bcd_to_7segm;
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.ALL;
+
+ENTITY digit_transform is
+PORT (
+         etaj: in std_logic_vector(3 downto 0);
+  	    c1, c2: out std_logic_vector(3 downto 0)
+       );
+END entity digit_transform;
+
+ARCHITECTURE arch_digit_transform OF digit_transform IS
+SHARED VARIABLE N,C,D:INTEGER;
+BEGIN
+	PROCESS(etaj)
+	begin 
+
+		N:=to_integer(unsigned(ETAJ));
+		C:= N / 10;
+		D:= N mod 10;
+		C1 &lt;= std_logic_vector( to_unsigned(C, 4));
+		C2 &lt;= std_logic_vector( to_unsigned(D, 4));
+
+end process;
+end architecture arch_digit_transform;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY mux_initializat IS
+  PORT (
+ 	sel1, sel2: in std_logic;
+ 	output_m: out std_logic_vector(3 downto 0)
+    );
+END mux_initializat;
+
+ARCHITECTURE arch_mux_initializat OF mux_initializat IS
+signal s0:  std_logic_vector(3 downto 0):="0001";
+signal s1:  std_logic_vector(3 downto 0):="0010";
+signal s2:  std_logic_vector(3 downto 0):="0100";
+signal s3:  std_logic_vector(3 downto 0):="0000";
+BEGIN
+process(sel1, sel2)
+begin
+	if sel1='0' and sel2='0' then output_m &lt;= s0;
+	elsif sel1='0' and sel2='1' then output_m &lt;= s1;
+	elsif sel1='1' and sel2='0' then output_m &lt;= s2;
+	elsif sel1='1' and sel2='1' then output_m &lt;= s3;
+	end if;
+end process;
+END arch_mux_initializat;
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY seven_segment_2_digits IS
+  PORT (
+  	input: in std_logic_vector(3 downto 0);
+  	anod: out std_logic_vector(3 downto 0);
+  	catod: out std_logic_vector(6 downto 0);
+  	clock: in std_logic;
+  	dir: in std_logic
+    );
+END entity seven_segment_2_digits;
+
+ARCHITECTURE arch_seven_segment_2_digits OF seven_segment_2_digits IS
+
+component digit_transform IS
+PORT (
+       etaj: in std_logic_vector(3 downto 0);
+  	  c1, c2: out std_logic_vector(3 downto 0)
+);
+END component digit_transform;
+component counter IS
+PORT (
+  clk: in std_logic;
+  output_c: out std_logic_vector (1 downto 0)
+);
+END component counter;
+component MUX is
+port(	
+	sel1, sel2: in std_logic;
+	input0, input1, input2, input3: in std_logic_vector (3 downto 0);
+	output_m: out std_logic_vector(3 downto 0)
+);
+end component MUX;
+component bcd_to_7segm IS
+  PORT (
+	uni: in std_logic_vector(3 downto 0);
+	ssd_uni: out std_logic_Vector(6 downto 0)
+    );
+END component bcd_to_7segm;
+component mux_initializat IS
+  PORT (
+ 	sel1, sel2: in std_logic;
+ 	output_m: out std_logic_vector(3 downto 0)
+    );
+END component mux_initializat;
+component decizie_directie is
+port(
+	dir: in std_logic;
+	output_directie: out std_logic_vector(3 downto 0)
+);
+end component decizie_directie;
+---semnale intermediare
+signal z, u: std_logic_vector(3 downto 0);
+signal iesire_num: std_logic_vector(1 downto 0);
+signal iesire_mux1: std_logic_vector(3 downto 0);
+signal sageata_sus: std_logic_vector(3 downto 0):="1010";
+signal sageata_jos: std_logic_vector(3 downto 0):="1011";
+signal direction: std_logic_vector(3 downto 0):= "0000";
+BEGIN
+iesire_numar: counter port map(clock, iesire_num);
+dig_transformare: digit_transform port map(input, u, z);
+decizie_dir: decizie_directie port map(dir, direction);
+multiplexor1: mux port map(iesire_num(1), iesire_num(0), u, z, direction, "0000", iesire_mux1);
+bcd_7segmente: bcd_to_7segm port map(iesire_mux1, catod);
+mux_init: mux_initializat port map(iesire_num(1), iesire_num(0), anod);
+
+
+end architecture arch_seven_segment_2_digits;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity MUX is
+port(	
+	sel1, sel2: in std_logic;
+	input0, input1, input2, input3: in std_logic_vector (3 downto 0);
+	output_m: out std_logic_vector(3 downto 0)
+);
+end entity MUX;
+
+architecture arch_MUX of MUX is
+begin
+process(sel1,sel2)
+begin
+if sel1='0' and sel2='0'then output_m &lt;= input0;
+elsif sel1='0' and sel2='1' then output_m &lt;= input1;
+elsif sel1='1' and sel2='0' then output_m &lt;= input2;
+elsif sel1='1' and sel2='1' then output_m &lt;= input3;
+end if;
+end process;
+end architecture arch_MUX;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+ENTITY counter IS
+PORT (
+  clk: in std_logic;
+  output_c: out std_logic_vector (1 downto 0)
+ );
+END entity counter;
+
+ARCHITECTURE arch_c OF counter IS
+BEGIN
+	process(clk)
+	variable S: std_logic_vector (15 downto 0) := "0000000000000000";
+		begin
+		if rising_edge(clk) then
+		S := S + 1;
+		end if;
+	output_c &lt;= s(1 downto 0);	
+	end process;
+END arch_c;
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY bcd_to_7segm IS
+  PORT (
+	uni: in std_logic_vector(3 downto 0);
+	ssd_uni: out std_logic_Vector(6 downto 0)
+    );
+END entity bcd_to_7segm;
+
+ARCHITECTURE arch_bcd_to_7segm OF bcd_to_7segm IS
+
+BEGIN
+
+ssd_uni&lt;="1111110" when uni=x"0" else "0110000" when uni = x"1" else "1101101" when uni = x"2" else "1111001" when uni = x"3" else "0110011" when uni = x"4"
+	else "1011011" when uni = x"5" else "1011111" when uni = x"6" else "1110000" when uni = x"7" else "1111111" when uni = x"8" else "1110011" when uni = x"9" else "0100011" 
+	when uni="1010" else "0011100" when uni="1011" else "0000000";
+
+END arch_bcd_to_7segm;
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.ALL;
+
+ENTITY digit_transform is
+PORT (
+         etaj: in std_logic_vector(3 downto 0);
+  	    c1, c2: out std_logic_vector(3 downto 0)
+       );
+END entity digit_transform;
+
+ARCHITECTURE arch_digit_transform OF digit_transform IS
+SHARED VARIABLE N,C,D:INTEGER;
+BEGIN
+	PROCESS(etaj)
+	begin 
+
+		N:=to_integer(unsigned(ETAJ));
+		C:= N / 10;
+		D:= N mod 10;
+		C1 &lt;= std_logic_vector( to_unsigned(C, 4));
+		C2 &lt;= std_logic_vector( to_unsigned(D, 4));
+
+end process;
+end architecture arch_digit_transform;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY mux_initializat IS
+  PORT (
+ 	sel1, sel2: in std_logic;
+ 	output_m: out std_logic_vector(3 downto 0)
+    );
+END mux_initializat;
+
+ARCHITECTURE arch_mux_initializat OF mux_initializat IS
+signal s0:  std_logic_vector(3 downto 0):="0001";
+signal s1:  std_logic_vector(3 downto 0):="0010";
+signal s2:  std_logic_vector(3 downto 0):="0100";
+signal s3:  std_logic_vector(3 downto 0):="0000";
+BEGIN
+process(sel1, sel2)
+begin
+	if sel1='0' and sel2='0' then output_m &lt;= s0;
+	elsif sel1='0' and sel2='1' then output_m &lt;= s1;
+	elsif sel1='1' and sel2='0' then output_m &lt;= s2;
+	elsif sel1='1' and sel2='1' then output_m &lt;= s3;
+	end if;
+end process;
+END arch_mux_initializat;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity decizie_directie is
+port(
+	dir: in std_logic;
+	output_directie: out std_logic_vector(3 downto 0)
+);
+end entity decizie_directie;
+architecture arch_decizie_directie of decizie_directie is
+begin
+	output_directie &lt;= "1010" when dir ='1' else "1011";
+end arch_decizie_directie;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity decizie_directie is
+port(
+	dir: in std_logic;
+	output_directie: out std_logic_vector(3 downto 0)
+);
+end entity decizie_directie;
+architecture arch_decizie_directie of decizie_directie is
+begin
+	output_directie &lt;= "1010" when dir ='1' else "1011";
+end arch_decizie_directie;
+</vhdl>
+  <vhdl name="timer5_usi_deschise">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+
+
+ENTITY timer5_usi_deschise IS
+  PORT (
+  	reset5: in std_logic;
+  	clk5: in std_logic;
+  	enable: in std_logic;
+  	output: out std_logic
+    );
+END entity timer5_usi_deschise;
+
+ARCHITECTURE arch_timer5_usi_deschise OF timer5_usi_deschise IS
+signal ok: std_logic:='0';
+BEGIN
+
+	process(clk5,reset5)
+	variable count_helper: natural := 0;
+	begin
+	if enable ='1' then
+			if reset5='1' then 
+			count_helper := 0; 
+			ok&lt;='0';
+			elsif clk5'event and clk5='1' then
+				count_helper := count_helper + 1;
+			elsif count_helper = 5 then
+				ok&lt;='1';
+				count_helper := 0;
+			elsif count_helper /=5 then ok &lt;='0';
+			end if;
+	end if;
+	end process;
+	output&lt;=ok;
+END arch_timer5_usi_deschise;</vhdl>
+  <vhdl name="divizor_frecv_timer1">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+
+entity divizor_frecv_timer1 is 
+    port ( CLK : in std_logic;
+    D : out std_logic;
+    reset: in std_logic
+);
+end entity divizor_frecv_timer1;
+ 
+architecture arch_divizor_frecv_timer1 of divizor_frecv_timer1 is     
+
+signal count_c: integer :=1;
+signal new_clock: std_logic :='0';
+signal newQ: std_logic_vector(3 downto 0);
+BEGIN
+
+process(clk, reset)
+begin
+	if(reset = '1') then 
+		count_c &lt;= 1;
+	elsif(RISING_EDGE(clk)) then
+		if(count_c = 50000000) then
+			count_c &lt;= 1;
+			new_clock &lt;= not(new_clock);
+	else count_c &lt;= count_c+1;
+	end if;
+	end if;
+	end process;
+end arch_divizor_frecv_timer1;</vhdl>
+  <vhdl name="divizor_frecv_timer3">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+
+entity divizor_frecv_timer3 is 
+    port ( CLK : in std_logic;
+    D : out std_logic;
+    reset: in std_logic
+);
+end entity divizor_frecv_timer3;
+ 
+architecture arch_divizor_frecv_timer3 of divizor_frecv_timer3 is     
+
+signal count_c: integer :=1;
+signal new_clock: std_logic :='0';
+signal newQ: std_logic_vector(3 downto 0);
+BEGIN
+
+process(clk, reset)
+begin
+	if(reset = '1') then 
+		count_c &lt;= 1;
+	elsif(RISING_EDGE(clk)) then
+		if(count_c = 3 * 50000000) then
+			count_c &lt;= 1;
+			new_clock &lt;= not(new_clock);
+	else count_c &lt;= count_c+1;
+	end if;
+	end if;
+	end process;
+end arch_divizor_frecv_timer3;</vhdl>
+  <vhdl name="mux_sel_viteza">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY mux_sel_viteza IS
+  PORT (
+ 	input1, input2: in std_logic;
+ 	s: in std_logic;
+ 	output: out std_logic
+    );
+END entity mux_sel_viteza;
+
+ARCHITECTURE arch_mux_sel_viteza OF mux_sel_viteza IS
+BEGIN
+
+	output &lt;= input1 when (s='0') else input2;
+
+END arch_mux_sel_viteza;
+</vhdl>
+</project>
